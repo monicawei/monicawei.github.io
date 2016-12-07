@@ -4255,10 +4255,13 @@ html {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.bannerimage2 {
+.bannerimageMobile {
   display:none;
 }
 
+.bannerimageIpad{
+  display:none;
+}
 @media only screen and (min-width: 0) {
   html {
     font-size: 14px;
@@ -4266,29 +4269,29 @@ html {
   }
 
 
- /* .parallax img.bannerimage1{
-     display: none;
-   }
-
-   .parallax img.bannerimage2{
-     display: block;
-   }*/
-}
 
 @media only screen and (min-width: 992px) {
   html {
     font-size: 14.5px;
     background-color:white;
   }
-  /*.parallax img.bannerimage1{
+}
+/*portrait only IPAD */
+@media only screen and (min-device-width: 767px) and (max-device-width: 1025px) and (orientation: portrait){
+  .parallax img.bannerimage1{
      display: none;
    }
 
-   .parallax img.bannerimage2{
+   .parallax img.bannerimageMobile{
+     display: none;
+   }
+
+   .parallax img.bannerimageIpad{
      display: block;
-   }*/
+   }
 }
-@media only screen and (max-width: 667px) {
+
+@media only screen and (max-width: 766px) {
   html {
     font-size: 14.5px;
     background-color:white;
@@ -4297,8 +4300,12 @@ html {
      display: none;
    }
 
-   .parallax img.bannerimage2{
+   .parallax img.bannerimageMobile{
      display: block;
+   }
+
+   .parallax img.bannerimageIpad{
+     display: none;
    }
 }
 @media only screen and (min-width: 1200px) {
@@ -4306,13 +4313,6 @@ html {
     font-size: 15px;
     background-color:white;
   }
-/*  .parallax img.bannerimage1{
-     display: none;
-   }
-
-   .parallax img.bannerimage2{
-     display: block;
-   }*/
 }
 
 h1, h3, h4
