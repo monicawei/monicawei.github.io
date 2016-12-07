@@ -3822,7 +3822,10 @@ input[type=range] + .thumb {
   .row .col.push-m12 {
     left: 100%;
   }
+
+
 }
+
 
 @media only screen and (min-width: 993px) {
   .row .col.l1 {
@@ -4252,12 +4255,24 @@ html {
   color: rgba(0, 0, 0, 0.87);
 }
 
+.bannerimage2 {
+  display:none;
+}
+
 @media only screen and (min-width: 0) {
   html {
     font-size: 14px;
     background-color:white;
-    
   }
+
+
+ /* .parallax img.bannerimage1{
+     display: none;
+   }
+
+   .parallax img.bannerimage2{
+     display: block;
+   }*/
 }
 
 @media only screen and (min-width: 992px) {
@@ -4265,25 +4280,39 @@ html {
     font-size: 14.5px;
     background-color:white;
   }
+  /*.parallax img.bannerimage1{
+     display: none;
+   }
+
+   .parallax img.bannerimage2{
+     display: block;
+   }*/
 }
+@media only screen and (max-width: 667px) {
+  html {
+    font-size: 14.5px;
+    background-color:white;
+  }
+  .parallax img.bannerimage1{
+     display: none;
+   }
 
-@media (min-device-width:320px) {
-        img[data-src-960px] {
-            content: attr(data-src-960px, url);
-        }
-    }
-
-    @media (min-device-width:960px) {
-        img[data-src-1260px] {
-            content: attr(data-src-1260px, url);
-        }
-    }
-
+   .parallax img.bannerimage2{
+     display: block;
+   }
+}
 @media only screen and (min-width: 1200px) {
   html {
     font-size: 15px;
     background-color:white;
   }
+/*  .parallax img.bannerimage1{
+     display: none;
+   }
+
+   .parallax img.bannerimage2{
+     display: block;
+   }*/
 }
 
 h1, h3, h4
@@ -4376,6 +4405,7 @@ small {
   .flow-text {
     font-size: 1.2rem;
   }
+
 }
 
 @media only screen and (min-width: 390px) {
@@ -4388,6 +4418,7 @@ small {
   .flow-text {
     font-size: 1.248rem;
   }
+
 }
 
 @media only screen and (min-width: 450px) {
